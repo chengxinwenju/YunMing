@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEBDE"
+    tools:context=".LoginActivity" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_bg"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_bg"
+        android:hint="@string/login_account_hint" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/edit_bg"
+        android:hint="@string/login_password_hint"
+        android:inputType="textPassword" >
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="122dp"
+        android:layout_height="32dp"
+        android:layout_alignLeft="@+id/et_password"
+        android:layout_below="@+id/et_password"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/gray_btn_selector"
+        android:text="@string/register_btn" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="122dp"
+        android:layout_height="32dp"
+        android:layout_alignBaseline="@+id/btn_register"
+        android:layout_alignBottom="@+id/btn_register"
+        android:layout_alignRight="@+id/et_password"
+        android:background="@drawable/green_btn_selector"
+        android:text="@string/login_btn" />
+
+    <Button
+        android:id="@+id/btn_forget_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/forget_selector" />
+
+</RelativeLayout>

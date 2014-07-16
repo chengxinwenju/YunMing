@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+            </FrameLayout>
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" >
+            </TabWidget>
+
+            <RadioGroup
+                android:id="@+id/home_radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tab_background"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/home_radiobutton_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/home_button"
+                    android:gravity="center_horizontal"
+                    android:text="@string/tab_home"
+                    android:textColor="#ffffff" />
+
+                <RadioButton
+                    android:id="@+id/home_radiobutton_mall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/mall_button"
+                    android:gravity="center_horizontal"
+                    android:text="@string/tab_mall"
+                    android:textColor="#ffffff" />
+
+                <RadioButton
+                    android:id="@+id/home_radiobutton_scan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/scancode_button"
+                    android:gravity="center_horizontal"
+                    android:text="@string/tab_scan"
+                    android:textColor="#ffffff" />
+
+                <RadioButton
+                    android:id="@+id/home_radiobutton_mine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/mine_button"
+                    android:gravity="center_horizontal"
+                    android:text="@string/tab_mine"
+                    android:textColor="#ffffff" />
+
+                <RadioButton
+                    android:id="@+id/home_radiobutton_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableTop="@drawable/more_button"
+                    android:gravity="center_horizontal"
+                    android:text="@string/tab_more"
+                    android:textColor="#ffffff" />
+            </RadioGroup>
+        </LinearLayout>
+    </TabHost>
+
+</RelativeLayout>
